@@ -28,6 +28,10 @@ ol {
     padding: 0;
 }
 
+.about-me {
+
+}
+
 /* This makes it so that the footer is fixed on the bottom and just formats it overall */
 footer {
     position: fixed;
@@ -37,7 +41,7 @@ footer {
     width: 100%;
     background: #4a8a64;
     color: #FFFF;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
 }
 
