@@ -65,8 +65,8 @@ footer {
 }
 
 /* Makes the link a blue color without the underline */
-a[href="https://tinyurl.com/thisiscs50"] {
-    color: #B0C5E6;
+a {
+    color: #4a8a64;
     text-decoration: none;
 }
 
