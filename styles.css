@@ -83,7 +83,6 @@ img{
     animation: shake 0.5s;
   
     /* When the animation is finished, start aain */
-    animation-iteration-count: 1;
   }
 
 
