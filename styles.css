@@ -14,6 +14,14 @@
     }
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 /* This makes it so that all unordered lists have no bullets (or markers) and that they're not indented (via "padding: 0;"). Margin is just used for stylistic purposes. */
 ul {
     list-style-type: none;
