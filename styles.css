@@ -102,4 +102,6 @@ a {
 /* Makes the link underline when hovered over */
 a:hover {
     text-decoration: underline;
+    color: #a1d3b5;
+
 }
