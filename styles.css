@@ -112,3 +112,7 @@ a:hover {
 .greetingbox {
     padding-bottom: 20px;;
 }
+
+#memoji {
+    width: 20%;
+}
