@@ -116,3 +116,15 @@ a:hover {
 #memoji {
     width: 20%;
 }
+
+#blurb {
+    display: flex;
+}
+
+#blurb-pic {
+    flex: 25%;
+}
+
+#blurb-content {
+    flex: 75%;
+}
