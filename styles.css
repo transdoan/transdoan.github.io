@@ -113,9 +113,9 @@ a:hover {
     padding-bottom: 20px;;
 }
 
-#memoji {
+/**#memoji {
     width: 20%;
-}
+}**/
 
 #blurb {
     display: flex;
