@@ -122,9 +122,10 @@ a:hover {
 }
 
 #blurb-pic {
-    flex: 25%;
+    flex: 50%;
 }
 
 #blurb-content {
-    flex: 75%;
+    flex: 50%;
+    text-align: left;
 }
