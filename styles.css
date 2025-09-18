@@ -18,7 +18,8 @@ html, body {
   padding: 0;
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(135deg, #bdd7dc 0%, #ddf5f6 100%);
+  height:100%;
+  background: linear-gradient(135deg, #dfeff3 0%, #bdd5d6 100%);
 }
 
 html, body, *, .btn, .btn-outline-success, a, button {
@@ -48,8 +49,8 @@ ol {
 }
 
 /* This makes it so that the footer is fixed on the bottom and just formats it overall */
-footer {
-    position: fixed;
+/* footer {
+    position: flex;
     left: 0%;
     bottom: 0%;
     height: 30px;
@@ -58,7 +59,7 @@ footer {
     color: #FFFF;
     margin-top: 10%;
     text-align: center;
-}
+} */
 
 /* Makes it so that the menu is fixed on the top left of the page even as the user scrolls. I used !important to override the bootstrap CSS properties. */
 .btn-group {
@@ -74,18 +75,15 @@ footer {
 }
 
 .headers {
-    text-align: center;
-    display: block;
-    position: absolute;
-    left: 0%;
-    top: 25%;
-    right: 0%;
-    bottom: 30%;
-    font-size: larger;
-    font-weight: bold;
-    width: 90%;
-    max-width: 700px;
-    margin: 0 auto 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  width: 90%;
+  max-width: 700px;
 }
 
 #memoji {
@@ -99,7 +97,7 @@ img {
 
 /* Makes the link a blue color without the underline */
 a {
-    color: #e47966;
+    color: #f18069;
     text-decoration: none;
 }
 
@@ -141,17 +139,15 @@ a:hover {
 /* Mobile styles - applies to screens 768px and smaller */
 @media (max-width: 768px) {
 .headers {
-    text-align: center;
-    display: block;
-    position: absolute;
-    left: 0%;
-    top: 5%;
-    right: 0%;
-    font-size: larger;
-    font-weight: bold;
-    width: 90%;
-    max-width: 700px;
-    margin: 0 auto 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  width: 90%;
+  max-width: 700px;
 }
   #blurb {
     flex-direction: column !important;
