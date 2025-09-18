@@ -139,22 +139,35 @@ a:hover {
 }
 
 /* Mobile styles - applies to screens 768px and smaller */
-@media (max-width: 758px) {
+@media (max-width: 768px) {
+.headers {
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    right: 0%;
+    font-size: larger;
+    font-weight: bold;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 4rem;
+}
   #blurb {
-    flex-direction: row !important;
+    flex-direction: column !important;
     align-items: center !important;
-    gap: 10px !important;
+    gap: 5px !important;
   }
   
   #blurb-name-header {
-    font-size: 1.0rem;
-    padding-top: 18px;
+    font-size: 2.0rem;
+    /* padding-top: 10px; */
     padding-bottom: 5px;
   }
   
   #landing-about {
-    max-width: 200px;
-    font-size: 0.6rem;
+    max-width: 400px;
+    font-size: 1.0rem;
   }
   
   #blurb-pic {
