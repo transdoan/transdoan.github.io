@@ -165,20 +165,13 @@ a:hover {
   }
   
   #landing-about {
-    max-width: 400px;
-    font-size: 1.0rem;
+    max-width: 350px;
+    font-size: 1.2rem;
   }
   
   #blurb-pic {
     order: 0;
     flex-shrink: 0;
-  }
-  
-  #memoji {
-    width: 80%;
-    height: auto;
-    max-width: 120px;
-    border-radius: 8px;
   }
 }
 
