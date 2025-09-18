@@ -124,11 +124,18 @@ a:hover {
   flex-shrink: 0;
 }
 
-#memoji {
-  width: 100%;
-  height: auto;
-  max-width: 200px; /* Adjust this value as needed */
-  border-radius: 8px; /* Optional: add some rounded corners */
+
+.custom-nav {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline;
+  margin: 0 1rem;
 }
 
 #landing-about {
@@ -140,8 +147,9 @@ a:hover {
 @media (max-width: 768px) {
 .headers {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  /* top: 50%;
+  left: 50%; */
+  padding-top: 30%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: larger;
@@ -157,7 +165,7 @@ a:hover {
   #blurb-name-header {
     font-size: 2.0rem;
     /* padding-top: 10px; */
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
   }
   
   #landing-about {
