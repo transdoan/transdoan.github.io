@@ -77,18 +77,18 @@ img {
 }
 
 a {
-    color: #f18069;
+    color: #5c824e;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #ed7c78;
 }
 
-.greetingbox {
+/* .greetingbox {
     padding-bottom: 20px;;
-}
+} */
 
 #blurb {
   display: flex;
@@ -110,9 +110,9 @@ a:hover {
 }
 
 .nav-link {
-  color: #333;
+  color: #6e8d2a;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 19px;
   display: inline;
   margin: 0 1rem;
 }
