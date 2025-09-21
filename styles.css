@@ -15,13 +15,12 @@
 
 html, body {
   margin: 0;
-  padding: 0;
+  padding: 0 0 100px 0; 
   min-height: 100vh;
   width: 100%;
-  height:100%;
+  /* height: 100%; */
   background: linear-gradient(135deg, #dfeff3 0%, #bdd5d6 100%);
 }
-
 html, body, *, .btn, .btn-outline-success, a, button {
   cursor: url('fish_cursor.cur'), auto !important;
 }
@@ -48,30 +47,13 @@ ol {
     padding: 0;
 }
 
-/* This makes it so that the footer is fixed on the bottom and just formats it overall */
-/* footer {
-    position: flex;
-    left: 0%;
-    bottom: 0%;
-    height: 30px;
-    width: 100%;
-    background: #4a8a64;
-    color: #FFFF;
-    margin-top: 10%;
-    text-align: center;
-} */
-
 /* Makes it so that the menu is fixed on the top left of the page even as the user scrolls. I used !important to override the bootstrap CSS properties. */
 .btn-group {
-    /* Remove these fixed positioning properties:
-    position: fixed !important;
-    margin: 10px !important; */
-    /* Add these new properties instead: */
     display: flex;
     justify-content: center; /* Center the buttons horizontally */
     margin: 20px auto; /* Add space above/below and center horizontally */
     background-color: #FFFFFF !important;
-    width: fit-content; /* Only take up as much width as needed */
+    width: fit-content; 
 }
 
 .headers {
@@ -94,13 +76,11 @@ img {
     animation: shake 0.5s;
 }
 
-/* Makes the link a blue color without the underline */
 a {
     color: #f18069;
     text-decoration: none;
 }
 
-/* Makes the link underline when hovered over */
 a:hover {
     text-decoration: underline;
     color: #ed7c78;
@@ -158,7 +138,7 @@ a:hover {
   #blurb {
     flex-direction: column !important;
     align-items: center !important;
-    gap: 10px !important; /* Add this line - reduces gap from 50px to 20px on mobile */
+    gap: 10px !important; 
   }
   
   #blurb-name-header {
