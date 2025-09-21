@@ -103,7 +103,6 @@ a:hover {
     flex-shrink: 0;
 }
 
-
 .custom-nav {
   text-align: center;
   line-height: 1.8;
@@ -124,9 +123,11 @@ a:hover {
 
 /* Mobile styles - applies to screens 768px and smaller */
 @media (max-width: 768px) {
-  .headers {
+   .headers {
     position: absolute;
-    padding-top: 30%;
+    top: 50%; /* Add this to work with transform */
+    left: 50%; /* Add this to work with transform */
+    padding-top: 0; /* Remove padding-top since transform handles centering */
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: larger;
@@ -155,4 +156,12 @@ a:hover {
     order: 0;
     flex-shrink: 0;
   }
+
+  .nav-link {
+    color: #6e8d2a;
+    text-decoration: none;
+    font-size: 19px;
+    display: inline;
+    margin: 0 0.5rem;
+    }
 }
