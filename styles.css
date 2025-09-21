@@ -86,10 +86,6 @@ a:hover {
     color: #ed7c78;
 }
 
-/* .greetingbox {
-    padding-bottom: 20px;;
-} */
-
 #blurb {
   display: flex;
   /* align-items: flex-start;*/
@@ -125,10 +121,9 @@ a:hover {
 @media (max-width: 768px) {
    .headers {
     position: absolute;
-    top: 50%; /* Add this to work with transform */
-    left: 50%; /* Add this to work with transform */
-    padding-top: 0; /* Remove padding-top since transform handles centering */
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9); /* Scale everything down to 80% */
     text-align: center;
     font-size: larger;
     font-weight: bold;
@@ -140,11 +135,13 @@ a:hover {
     flex-direction: column !important;
     align-items: center !important;
     gap: 10px !important; 
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
   }
   
   #blurb-name-header {
     font-size: 2.0rem;
     padding-bottom: 5px; 
+    font-size: clamp(1.7rem, 4vw, 2.0rem);
   }
   
   #landing-about {
@@ -163,5 +160,6 @@ a:hover {
     font-size: 19px;
     display: inline;
     margin: 0 0.5rem;
+    font-size: clamp(16px, 4vw, 19px);
     }
 }
