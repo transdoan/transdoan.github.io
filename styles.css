@@ -144,26 +144,25 @@ a:hover {
 
 /* Mobile styles - applies to screens 768px and smaller */
 @media (max-width: 768px) {
-.headers {
-  position: absolute;
-  /* top: 50%;
-  left: 50%; */
-  padding-top: 30%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: larger;
-  font-weight: bold;
-  width: 90%;
-  max-width: 700px;
-}
+  .headers {
+    position: absolute;
+    padding-top: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    width: 90%;
+    max-width: 700px;
+  }
+  
   #blurb {
     flex-direction: column !important;
     align-items: center !important;
+    gap: 10px !important; /* Add this line - reduces gap from 50px to 20px on mobile */
   }
   
   #blurb-name-header {
     font-size: 2.0rem;
-    /* padding-top: 10px; */
     padding-bottom: 5px; 
   }
   
@@ -177,4 +176,3 @@ a:hover {
     flex-shrink: 0;
   }
 }
-
