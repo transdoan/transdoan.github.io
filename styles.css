@@ -14,18 +14,22 @@
 }
 
 html, body {
-  margin: 0;
-  padding: 0 0 100px 0; 
-  min-height: 100vh;
-  width: 100%;
-  /* height: 100%; */
-  background: linear-gradient(135deg, #dfeff3 0%, #bdd5d6 100%);
-}
-html, body, *, .btn, .btn-outline-success, a, button {
-  cursor: url('fish_cursor.cur'), auto !important;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #dfeff3 0%, #bdd5d6 100%);
+    /* Add flexbox to center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-p.landing-about{
+html, body, *, .btn, .btn-outline-success, a, button {
+    cursor: url('fish_cursor.cur'), auto !important;
+}
+
+p.landing-about {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -53,31 +57,29 @@ ol {
     justify-content: center; /* Center the buttons horizontally */
     margin: 20px auto; /* Add space above/below and center horizontally */
     background-color: #FFFFFF !important;
-    width: fit-content; 
+    width: fit-content;
 }
 
-.headers {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: larger;
-  font-weight: bold;
-  width: 90%;
-  max-width: 700px;
+/* Main container - fixed and centered */
+.landing-page-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    box-sizing: border-box;
 }
-
-/* #memoji {
-    margin: 12px;
-} */
 
 img {
     animation: shake 0.5s;
 }
 
 a {
-    color: #5c824e;
+    color: #92658f;
     text-decoration: none;
 }
 
@@ -86,81 +88,116 @@ a:hover {
     color: #ed7c78;
 }
 
+/* Flexbox container for the two main content divs */
 #blurb {
-  display: flex;
-  /* align-items: flex-start;*/
-  align-items: center;
-  gap: 50px; 
-  text-align: justify; /* make it equal width*/
-  color: #35435c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: justify; /* make it equal width*/
+    color: #35435c;
+    width: 100%;
 }
 
+/* ASCII art container - responsive sizing */
 #blurb-pic {
-    flex-shrink: 0;
+    flex: 0 1 auto;
+    font-size: clamp(0.4rem, 1.2vw, 0.9rem);
+    line-height: 1.2;
+    white-space: pre;
+    font-family: monospace;
+}
+
+#blurb-name-header {
+    font-family: "Bitcount Single Ink", system-ui;
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .custom-nav {
-  text-align: center;
-  line-height: 1.8;
+    text-align: center;
+    line-height: 1.8;
 }
 
 .nav-link {
-  color: #6e8d2a;
-  text-decoration: none;
-  font-size: 19px;
-  display: inline;
-  margin: 0 1rem;
+    color: #92658f;
+    text-decoration: none;
+    font-size: 19px;
+    display: inline;
+    margin: 0 1rem;
 }
 
-#landing-about {
-  flex: 1;
-  max-width: 350px;
+/* Text content container */
+#blurb-about {
+    flex: 0 1 280px;
+    font-family: "Mozilla Text", sans-serif;
+    font-size: 17px;
+    font-optical-sizing: auto;
+}
+
+/* Tablet styles - 769px to 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+    #blurb-pic {
+        font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+    }
+    
+    #blurb {
+        gap: 30px;
+    }
 }
 
 /* Mobile styles - applies to screens 768px and smaller */
 @media (max-width: 768px) {
-   .headers, body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.9); /* Scale everything down to 80% */
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-    width: 90%;
-    max-width: 700px;
-  }
-  
-  #blurb {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 10px !important; 
-    font-size: clamp(1.2rem, 3vw, 1.4rem);
-  }
-  
-  #blurb-name-header {
-    font-size: 2.0rem;
-    padding-bottom: 5px; 
-    font-size: clamp(1.7rem, 4vw, 2.0rem);
-  }
-  
-  #landing-about {
-    max-width: 350px;
-    font-size: 1.2rem;
-  }
-  
-  #blurb-pic {
-    order: 0;
-    flex-shrink: 0;
-    font-size: clamp(1.0rem, 3vw, 1.2rem);
-  }
+    .landing-page-content {
+        /* Keep fixed positioning but adjust for mobile */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: none;
+        padding: 15px;
+    }
 
-  .nav-link {
-    color: #6e8d2a;
-    text-decoration: none;
-    font-size: 19px;
-    display: inline;
-    margin: 0 0.4rem;
-    font-size: clamp(16px, 4vw, 19px);
+    #blurb {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    #blurb-pic {
+        order: 0;
+        font-size: clamp(1.0rem, 3.0vw, 1.5rem);
+        max-width: 100%;
+        padding-bottom: 0px;
+        overflow-x: auto;
+    }
+
+    #blurb-name-header {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        padding-bottom: 5px;
+    }
+
+    #blurb-about {
+        max-width: 90%;
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
+        text-align: justify;
+    }
+
+    .nav-link {
+        font-size: clamp(12px, 3.5vw, 14px);
+        margin: 0 0.5rem;
+    }
+}
+
+/* Very small mobile devices */
+@media (max-width: 480px) {
+    #blurb-pic {
+        font-size: clamp(0.5rem, 2vw, 1.0rem);
+    }
+    
+    #blurb-about {
+        font-size: clamp(0.85rem, 2.8vw, 1rem);
     }
 }
