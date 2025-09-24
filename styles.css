@@ -147,7 +147,7 @@ a:hover {
         "ROND" 84;
     font-size: inherit;
     display: inline;
-    margin: 0 0.3rem;
+    margin: 0 2px;
 }
 
 /* Text content container */
@@ -173,8 +173,18 @@ a:hover {
         gap: 30px;
     }
 
+    #blurb-about {
+        font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+    }
+
     .nav-link {
-        margin: 0 0.4rem;
+        font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+        font-weight: 890;
+        font-variation-settings:
+            "ROND" 84;
+        font-size: inherit;
+        margin: 0 2px;
+        padding-bottom: 2rem;
     }
 }
 
@@ -188,7 +198,7 @@ a:hover {
         transform: translate(-50%, -50%);
         width: 90%;
         max-width: none;
-        padding: 20px;
+        padding: 10px;
     }
 
     #blurb {
@@ -199,14 +209,14 @@ a:hover {
 
     #blurb-pic {
         order: 0;
-        font-size: clamp(1rem, 3.0vw, 1.4rem);
+        font-size: clamp(0.8rem, 3.0vw, 1.0rem);
         max-width: 100%;
         padding-bottom: -2px;
         overflow-x: auto;
     }
 
     #blurb-name-header {
-        font-size: clamp(1.5rem, 5vw, 2rem);
+        font-size: clamp(1rem, 5vw, 1.4rem);
         padding-bottom: 5px;
     }
 
@@ -218,29 +228,43 @@ a:hover {
 
     .nav-link {
         font-size: clamp(0.8rem, 3vw, 1.0rem);
-        margin: 0 0.2rem;
+        font-weight: 890;
+        font-variation-settings:
+            "ROND" 84;
+        font-size: inherit;
+        margin: 0.5rem 2px;
+        padding-bottom: 1rem;
 
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     #blurb-pic {
         font-size: clamp(0.7rem, 3vw, 0.85rem);
     }
 
     #blurb-name-header {
-        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-size: clamp(1.5rem, 3vw, 1.8rem);
+        font-weight: 890;
+        font-variation-settings:
+            "ROND" 84;
         padding-bottom: 5px;
         margin-top: 0px;
     }
     
     #blurb-about {
-        font-size: clamp(0.85rem, 3vw, 1rem);
+        font-size: clamp(0.9rem, 3vw, 1rem);
+        font-weight: 890;
+        font-variation-settings:
+            "ROND" 84;
     }
 
     .nav-link {
-        font-size: clamp(0.85rem, 3vw, 1rem);
-        margin: 0 0.2rem;
+        font-size: clamp(0.9rem, 3vw, 1rem);
+        margin: 0 2px;
+        font-weight: 890;
+        font-variation-settings:
+            "ROND" 84;
 
     }
 }
