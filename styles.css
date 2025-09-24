@@ -85,7 +85,21 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #ed7c78;
+    color: #e8706c;
+}
+
+#email-link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: #92658f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#email-link-button:hover {
+    text-decoration: underline;
 }
 
 /* Flexbox container for the two main content divs */
@@ -99,7 +113,6 @@ a:hover {
     width: 100%;
 }
 
-/* ASCII art container - responsive sizing */
 #blurb-pic {
     flex: 0 1 auto;
     font-size: clamp(0.4rem, 1.2vw, 0.9rem);
@@ -140,6 +153,7 @@ a:hover {
 @media (max-width: 1024px) and (min-width: 769px) {
     #blurb-pic {
         font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+        margin-bottom: 0px;
     }
     
     #blurb {
@@ -157,7 +171,7 @@ a:hover {
         transform: translate(-50%, -50%);
         width: 90%;
         max-width: none;
-        padding: 15px;
+        padding: 20px;
     }
 
     #blurb {
@@ -168,9 +182,9 @@ a:hover {
 
     #blurb-pic {
         order: 0;
-        font-size: clamp(1.0rem, 3.0vw, 1.5rem);
+        font-size: clamp(1rem, 3.0vw, 1.4rem);
         max-width: 100%;
-        padding-bottom: 0px;
+        padding-bottom: -2px;
         overflow-x: auto;
     }
 
@@ -180,8 +194,8 @@ a:hover {
     }
 
     #blurb-about {
-        max-width: 90%;
-        font-size: clamp(0.9rem, 3vw, 1.1rem);
+        max-width: 100%;
+        font-size: clamp(1.0rem, 3vw, 1.3rem);
         text-align: justify;
     }
 
@@ -191,10 +205,15 @@ a:hover {
     }
 }
 
-/* Very small mobile devices */
 @media (max-width: 480px) {
     #blurb-pic {
-        font-size: clamp(0.5rem, 2vw, 1.0rem);
+        font-size: clamp(0.7rem, 3vw, 0.85rem);
+    }
+
+    #blurb-name-header {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        padding-bottom: 5px;
+        margin-top: 0px;
     }
     
     #blurb-about {
