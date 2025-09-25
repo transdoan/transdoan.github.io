@@ -241,7 +241,7 @@ a:hover {
     #blurb-pic {
         font-size: clamp(0.6rem, 3.5vw, 0.8rem); 
         margin: 5px 0; 
-        line-height: 1.2; 
+        line-height: 1.1; 
     }
 
     #blurb-pic pre {
