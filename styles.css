@@ -279,7 +279,7 @@ a:hover {
     #blurb-about {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        font-size: clamp(0.9rem, 3vw, 1.3rem);
+        font-size: clamp(1.0rem, 3vw, 1.3rem);
         font-weight: 450;
         font-family: monospace;
         font-style: normal;
@@ -288,7 +288,7 @@ a:hover {
     #blurb-nav {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        font-size: clamp(0.9rem, 3vw, 1.3rem);
+        font-size: clamp(1.0rem, 3vw, 1.3rem);
     }
 
     .nav-link {
