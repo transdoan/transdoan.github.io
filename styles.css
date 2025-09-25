@@ -241,7 +241,7 @@ a:hover {
         text-align: justify;
         font-family: monospace;
         font-style: normal;
-        font-weight: 520;
+        font-weight: 470;
         width: 100%;
         box-sizing: border-box;
     }
@@ -280,7 +280,7 @@ a:hover {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         font-size: clamp(1.0rem, 3vw, 1.3rem);
-        font-weight: 520;
+        font-weight: 470;
         font-family: monospace;
         font-style: normal;
     }
