@@ -103,6 +103,7 @@ a:hover {
 
 /* Flexbox container for the two main content divs */
 #blurb {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,7 +116,7 @@ a:hover {
 
 #blurb-pic {
     flex: 0 1 auto;
-    font-size: clamp(1.1rem, 1.2vw, 1.3rem);
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
     line-height: 1.2;
     white-space: pre;
     font-weight: normal;
@@ -144,6 +145,17 @@ a:hover {
     margin-bottom: 12px;
 }
 
+
+/* Text content container */
+#blurb-about {
+    flex: 0 1 280px;
+    font-family: monospace;
+    font-weight: 570;
+    font-style: normal;
+    font-size: clamp(1.0rem, 1.2vw, 1.2rem);
+}
+
+
 .custom-nav {
     text-align: center;
 }
@@ -157,15 +169,6 @@ a:hover {
     display: inline;
     margin: 0 2px;
     padding-bottom: 0;
-}
-
-/* Text content container */
-#blurb-about {
-    flex: 0 1 280px;
-    font-family: monospace;
-    font-weight: 570;
-    font-style: normal;
-    font-size: 15px;
 }
 
 /* Tablet styles */
