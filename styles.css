@@ -273,7 +273,7 @@ a:hover {
 
     .nav-link {
         text-align: center;
-        font-size: clamp(0.9rem, 3vw, 1rem);
+        font-size: clamp(0.8rem, 3vw, 0.9rem);
         /* margin: 0 0.2px; */
         font-weight: 450;
         font-family: monospace;
