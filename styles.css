@@ -22,6 +22,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: monospace;
+    font-weight: 450;
 }
 
 html, body, *, .btn, .btn-outline-success, a, button {
