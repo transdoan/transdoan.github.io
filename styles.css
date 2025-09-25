@@ -85,7 +85,7 @@ a:hover {
     text-align: center;
     font-weight: normal;
     color: #35435c;
-    width: 90%;
+    width: 95%;
     max-width: 600px;
     padding: 20px;
     margin: 10px 0;
@@ -161,7 +161,7 @@ a:hover {
 }
 
 #blurb-nav {
-    font-size: clamp(1.0rem, 1.2vw, 1.1rem);
+    font-size: clamp(1.0rem, 1.2vw, 1.2rem);
     text-align: left !important;
 }
 
@@ -239,6 +239,13 @@ a:hover {
         width: 100%;
         box-sizing: border-box;
     }
+
+    #blurb-nav {
+        padding-left: 5px;
+        
+        font-size: clamp(1.0rem, 1.2vw, 1.2rem);
+    
+    }
 }
 
 
@@ -273,6 +280,12 @@ a:hover {
         font-weight: 450;
         font-family: monospace;
         font-style: normal;
+    }
+
+    #blurb-nav {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
     }
 
     .nav-link {
