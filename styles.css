@@ -242,7 +242,6 @@ a:hover {
 
     #blurb-nav {
         padding-left: 5px;
-        
         font-size: clamp(1.0rem, 1.2vw, 1.2rem);
     
     }
@@ -259,16 +258,14 @@ a:hover {
 
     #blurb-pic {
         font-size: clamp(0.6rem, 3.5vw, 0.8rem); 
-        line-height: 1.1; 
          margin-bottom: 20px;
     }
 
     #blurb-pic pre {
-        line-height: 1.1;
+        line-height: 1.2;
     }
 
     #blurb-name-header {
-        padding-left: 0;
         font-size: clamp(1.3rem, 4vw, 1.6rem);
         text-align: center;
     }
@@ -276,7 +273,7 @@ a:hover {
     #blurb-about {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        font-size: clamp(0.9rem, 3vw, 1rem);
+        font-size: clamp(0.9rem, 3vw, 1.2rem);
         font-weight: 450;
         font-family: monospace;
         font-style: normal;
@@ -285,13 +282,13 @@ a:hover {
     #blurb-nav {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        font-size: clamp(0.9rem, 3vw, 1.1rem);
+        font-size: clamp(0.9rem, 3vw, 1.2rem);
     }
 
     .nav-link {
         text-align: center;
-        font-size: clamp(0.7rem, 3vw, 0.8rem);
-        margin: 0px;
+        font-size: clamp(0.8rem, 3vw, 1.0rem);
+        margin: 2px 0;
         font-weight: 450;
         font-family: monospace;
     }
