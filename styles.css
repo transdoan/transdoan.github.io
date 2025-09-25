@@ -63,13 +63,13 @@ ol {
 /* Main container - fixed and centered */
 .landing-page-content {
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     width: 90%;
-    max-width: 900px;
+    max-width: 600px;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -85,7 +85,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #e8706c;
+    color: #e1845f;
 }
 
 #email-link-button {
@@ -105,9 +105,10 @@ a:hover {
 /* Flexbox container for the two main content divs */
 #blurb {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    /* gap: 30px; */
     text-align: justify; /* make it equal width*/
     color: #35435c;
     width: 100%;
@@ -115,7 +116,7 @@ a:hover {
 
 #blurb-pic {
     flex: 0 1 auto;
-    font-size: clamp(1.0rem, 1.2vw, 1.4rem);
+    font-size: clamp(1.1rem, 1.2vw, 1.5rem);
     line-height: 1.2;
     white-space: pre;
     font-weight: normal;
@@ -123,15 +124,16 @@ a:hover {
 }
 
 #blurb-name-header {
-    font-family: "Doto", sans-serif;
-    font-weight: 780;
+    /* font-family: "Doto", sans-serif; */
+    font-family: monospace;
+    font-weight: 880;
   /* font-style: bold; */
     font-variation-settings:
         "ROND" 91;
-    color: #92658f;
+    color: #586382;
     font-size: clamp(1.2rem, 3vw, 1.7rem);
     text-align: left;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
 }
 
 .custom-nav {
@@ -141,11 +143,14 @@ a:hover {
 .nav-link {
     color: #92658f;
     text-decoration: none;
-    font-family: "Doto", sans-serif;
+    /* font-family: "Mozilla Text", sans-serif;  */
+    font-family: monospace;
+    font-weight: 520;
+    /* font-family: "Doto", sans-serif;
     font-weight: 890;
     font-variation-settings:
-        "ROND" 84;
-    font-size: inherit;
+        "ROND" 84; */
+    font-size: 18px;
     display: inline;
     margin: 0 2px;
 }
@@ -153,17 +158,15 @@ a:hover {
 /* Text content container */
 #blurb-about {
     flex: 0 1 280px;
-    /* font-family: "Mozilla Text", sans-serif; */
-    font-family: "Doto", sans-serif;
-    font-weight: 890;
-    font-variation-settings:
-        "ROND" 84;
-    font-size: 17px;
+    font-family: monospace;
+    font-weight: 570;
+    font-style: normal;
+    font-size: 18px;
     font-optical-sizing: auto;
 }
 
 /* Tablet styles - 769px to 1024px */
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) and (min-width: 869px) {
     #blurb-pic {
         font-size: clamp(0.5rem, 1.5vw, 0.8rem);
         margin-bottom: 0px;
@@ -175,21 +178,25 @@ a:hover {
 
     #blurb-about {
         font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+        font-family: monospace;
+        font-weight: 501;
+        font-style: normal;
+        /* font-variation-settings:
+            "wdth" 100; */
     }
 
     .nav-link {
         font-size: clamp(0.5rem, 1.5vw, 0.8rem);
-        font-weight: 890;
-        font-variation-settings:
-            "ROND" 84;
+        font-weight: 520;
+        /* font-variation-settings:
+            "ROND" 91; */
         font-size: inherit;
-        margin: 0 2px;
-        padding-bottom: 2rem;
+        margin: 0px 1px;
     }
 }
 
 /* Mobile styles - applies to screens 768px and smaller */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .landing-page-content {
         /* Keep fixed positioning but adjust for mobile */
         position: fixed;
@@ -209,7 +216,7 @@ a:hover {
 
     #blurb-pic {
         order: 0;
-        font-size: clamp(0.8rem, 3.0vw, 1.0rem);
+        font-size: clamp(0.9rem, 3.0vw, 1.0rem);
         max-width: 100%;
         padding-bottom: -2px;
         overflow-x: auto;
@@ -224,47 +231,58 @@ a:hover {
         max-width: 100%;
         font-size: clamp(1.0rem, 3vw, 1.3rem);
         text-align: justify;
+        font-family: monospace;
+        font-style: normal;
+        font-weight: 520;
     }
 
     .nav-link {
         font-size: clamp(0.8rem, 3vw, 1.0rem);
-        font-weight: 890;
-        font-variation-settings:
-            "ROND" 84;
+        font-weight: 520;
+        /* font-variation-settings:
+            "ROND" 84; */
         font-size: inherit;
-        margin: 0.5rem 2px;
-        padding-bottom: 1rem;
+        margin: 0.5rem 1px;
+        /* padding-bottom: 1rem; */
 
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 468px) {
+    #blurb {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
     #blurb-pic {
-        font-size: clamp(0.7rem, 3vw, 0.85rem);
+        font-size: clamp(0.8rem, 4vw, 0.90rem);
     }
 
     #blurb-name-header {
+        padding-left: 0.7rem;
         font-size: clamp(1.5rem, 3vw, 1.8rem);
-        font-weight: 890;
-        font-variation-settings:
-            "ROND" 84;
+        font-weight: 800;
         padding-bottom: 5px;
         margin-top: 0px;
     }
     
     #blurb-about {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
         font-size: clamp(0.9rem, 3vw, 1rem);
-        font-weight: 890;
-        font-variation-settings:
-            "ROND" 84;
+        font-weight: 570;
+        font-family: monospace;
+        font-style: normal;
+        width: 100%;
     }
 
     .nav-link {
+        text-align: center;
         font-size: clamp(0.9rem, 3vw, 1rem);
-        margin: 0 2px;
-        font-weight: 890;
-        font-variation-settings:
-            "ROND" 84;
+        margin: 0 0.7px;
+        font-weight: 570;
+        font-family: monospace;
 
     }
 }
