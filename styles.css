@@ -59,21 +59,6 @@ ol {
     width: fit-content;
 }
 
-/* Main container - fixed and centered */
-.landing-page-content {
-    position: fixed;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-weight: normal;
-    width: 90%;
-    max-width: 600px;
-    padding: 20px;
-    margin: 10px 0;
-    box-sizing: border-box;
-}
-
 img {
     animation: shake 0.5s;
 }
@@ -86,6 +71,23 @@ a {
 a:hover {
     text-decoration: none;
     color: #e1845f;
+}
+
+/* Main container - fixed and centered */
+.landing-page-content {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    text-align: center;
+    font-weight: normal;
+    color: #35435c;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
 }
 
 #email-link-button {
@@ -156,6 +158,11 @@ a:hover {
     font-size: clamp(1.0rem, 1.2vw, 1.2rem);
 }
 
+#blurb-nav {
+    font-size: clamp(1.0rem, 1.2vw, 1.1rem);
+    text-align: left !important;
+}
+
 
 .custom-nav {
     text-align: center;
@@ -165,7 +172,7 @@ a:hover {
     color: #92658f;
     text-decoration: none;
     font-family: monospace;
-    font-weight: 570;
+    font-weight: 450;
     font-size: 17px;
     display: inline;
     margin: 0 2px;
@@ -180,8 +187,8 @@ a:hover {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 90%; 
-        max-width: none;
-        margin-top: 10px;
+        /* max-width: none; */
+        margin-top: 8px;
         padding: 15px;
         box-sizing: border-box;
     }
@@ -237,22 +244,18 @@ a:hover {
     .landing-page-content {
         width: 90%;
         padding: 10px;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 50px;
-    }
-
-    #blurb {
-        /* gap: 1px;  */
     }
 
     #blurb-pic {
         font-size: clamp(0.6rem, 3.5vw, 0.8rem); 
-        margin: 5px 0; 
         line-height: 1.1; 
+         margin-bottom: 20px;
     }
 
     #blurb-pic pre {
-        line-height: inherit;
+        line-height: 1.1;
     }
 
     #blurb-name-header {
