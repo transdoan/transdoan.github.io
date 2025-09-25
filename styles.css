@@ -145,7 +145,6 @@ a:hover {
     font-size: clamp(1.0rem, 2vw, 1.2rem);
     line-height: 1.2;
     white-space: pre;
-   
     font-family: monospace;
     width: 100%; /* Ensure it takes full width of parent */
     overflow-x: auto; /* Allow horizontal scroll if needed */
@@ -165,6 +164,7 @@ a:hover {
 #blurb-nav {
     font-size: clamp(1.0rem, 1.2vw, 1.2rem);
     text-align: left !important;
+    font-weight: 590;
 }
 
 
