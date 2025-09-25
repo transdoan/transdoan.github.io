@@ -97,7 +97,7 @@ a:hover {
     border: none;
     padding: 0;
     font: inherit;
-    color: #92658f;
+    color: #8a638c;
     text-decoration: none;
     cursor: pointer;
 }
@@ -114,30 +114,9 @@ a:hover {
     align-items: center;
     justify-content: center;
     /* gap: 30px; */
-    text-align: justify; /* make it equal width*/
+    text-align: justify; 
     color: #35435c;
     width: 100%;
-}
-
-#blurb-pic {
-    flex: 0 1 auto;
-    font-size: clamp(q.0rem, 1.2vw, 1.2rem);
-    line-height: 1.2;
-    white-space: pre;
-    font-weight: normal;
-    font-family: monospace;
-    width: 100%; /* Ensure it takes full width of parent */
-    overflow-x: auto; /* Allow horizontal scroll if needed */
-    text-align: center; /* Center the ASCII art */
-    margin-bottom: 5rem;
-}
-
-#blurb-pic pre {
-    color:#385968 !important;
-    margin: 0; /* Remove default pre margins */
-    width: fit-content; /* Pre element only takes space it needs */
-    margin: 0 auto; /* Center the pre element */
-    text-align: left; /* Keep ASCII art left-aligned within the pre */
 }
 
 
@@ -145,8 +124,8 @@ a:hover {
     /* font-family: "Doto", sans-serif; */
     font-family: monospace;
     font-weight: 800;
-    color: #586382;
-    font-size: clamp(1.3rem, 3vw, 1.6rem);
+    color: #596780;
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
     text-align: left;
     margin-bottom: 12px;
 }
@@ -159,6 +138,28 @@ a:hover {
     font-weight: 570;
     font-style: normal;
     font-size: clamp(1.0rem, 1.2vw, 1.2rem);
+}
+
+#blurb-pic {
+    flex: 0 1 auto;
+    font-size: clamp(1.0rem, 2vw, 1.2rem);
+    line-height: 1.2;
+    white-space: pre;
+   
+    font-family: monospace;
+    width: 100%; /* Ensure it takes full width of parent */
+    overflow-x: auto; /* Allow horizontal scroll if needed */
+    text-align: center; /* Center the ASCII art */
+    margin-bottom: 5rem;
+}
+
+#blurb-pic pre {
+    color:#5b7a8a !important;
+    font-weight: 570;
+    margin: 0; 
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left; 
 }
 
 #blurb-nav {
@@ -209,11 +210,11 @@ a:hover {
 
     #blurb-pic {
         order: 0;
-        font-size: clamp(0.9rem, 2.5vw, 1.0rem);
+        font-size: clamp(1.0rem, 2vw, 1.2rem);
         width: 100%;
         overflow-x: auto;
         padding: 0;
-        margin: 10px 0; /*left and right margin for ascii pic */
+        margin: 2px 0; /*left and right margin for ascii pic */
         text-align: center;
         line-height: 1.2; 
     }
@@ -227,16 +228,16 @@ a:hover {
     }
 
     #blurb-name-header {
-        font-size: clamp(1.2rem, 5vw, 1.6rem);
+        font-size: clamp(1.3rem, 3vw, 1.6rem);
         padding-bottom: 5px;
         margin-bottom: 8px;
-        text-align: center; 
+        text-align: left; 
         width: 100%;
     }
 
     #blurb-about {
         max-width: 100%;
-        font-size: clamp(1.0rem, 3vw, 1.3rem);
+        font-size: clamp(1.0rem, 3vw, 1.2rem);
         text-align: justify;
         font-family: monospace;
         font-style: normal;
@@ -247,7 +248,7 @@ a:hover {
 
     #blurb-nav {
         padding-left: 5px;
-        font-size: clamp(1.0rem, 1.2vw, 1.2rem);
+        font-size: clamp(1.0rem, 3vw, 1.2rem);
     
     }
 }
@@ -262,12 +263,12 @@ a:hover {
     }
 
     #blurb-pic {
-        font-size: clamp(0.7rem, 3.5vw, 0.8rem); 
-         margin-bottom: 20px;
+        font-size: clamp(0.8rem, 3vw, 1.0rem); 
+        margin-bottom: 20px;
     }
 
     #blurb-pic pre {
-        line-height: 1.2;
+        line-height: 1.1;
     }
 
     #blurb-name-header {
@@ -278,7 +279,7 @@ a:hover {
     #blurb-about {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        font-size: clamp(1.0rem, 3vw, 1.2rem);
+        font-size: clamp(0.9rem, 3vw, 1.0rem);
         font-weight: 450;
         font-family: monospace;
         font-style: normal;
@@ -287,12 +288,12 @@ a:hover {
     #blurb-nav {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        font-size: clamp(1.0rem, 3vw, 1.2rem);
+        font-size: clamp(0.9rem, 3vw, 1.0rem);
     }
 
     .nav-link {
         text-align: center;
-        font-size: clamp(0.8rem, 3vw, 1.0rem);
+        font-size: clamp(0.9rem, 3vw, 1.0rem);
         margin: 2px 0;
         font-weight: 450;
         font-family: monospace;
