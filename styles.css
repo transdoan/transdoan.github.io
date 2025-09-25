@@ -168,14 +168,14 @@ a:hover {
     font-size: 15px;
 }
 
-/* Tablet styles - 769px to 1024px */
+/* Tablet styles */
 @media (max-width: 800px) {
     .landing-page-content {
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 95%; /* Increase from 90% to give more space */
+        width: 95%; 
         max-width: none;
         padding: 15px;
         box-sizing: border-box;
@@ -184,19 +184,19 @@ a:hover {
     #blurb {
         flex-direction: column;
         align-items: center;
-        gap: 15px; /* Reduce gap on mobile */
+        gap: 10px; 
         width: 100%;
     }
 
     #blurb-pic {
         order: 0;
-        font-size: clamp(0.7rem, 2.5vw, 0.9rem); /* Smaller font for mobile */
+        font-size: clamp(0.7rem, 2.5vw, 0.9rem);
         width: 100%;
         overflow-x: auto;
         padding: 0;
-        margin: 10px 0; /* Reduce margin on mobile */
+        margin: 10px 0; /*left and right margin for ascii pic */
         text-align: center;
-        line-height: 1.1; /* Tighter line height for mobile */
+        line-height: 1.2; 
     }
 
     #blurb-pic pre {
@@ -204,14 +204,14 @@ a:hover {
         line-height: inherit;
         margin: 0 auto;
         width: fit-content;
-        min-width: 0; /* Allow shrinking */
+        min-width: 0; /* allow 4 shrinking */
     }
 
     #blurb-name-header {
         font-size: clamp(1.2rem, 5vw, 1.6rem);
         padding-bottom: 5px;
         margin-bottom: 8px;
-        text-align: center; /* Center the header */
+        text-align: center; 
         width: 100%;
     }
 
@@ -227,7 +227,7 @@ a:hover {
     }
 }
 
-/* Extra small screens */
+
 @media (max-width: 468px) {
     .landing-page-content {
         width: 98%;
@@ -235,13 +235,13 @@ a:hover {
     }
 
     #blurb {
-        gap: 10px; /* Even smaller gap for tiny screens */
+        gap: 10px; 
     }
 
     #blurb-pic {
-        font-size: clamp(0.6rem, 3.5vw, 0.8rem); /* Even smaller for tiny screens */
-        margin: 5px 0; /* Minimal margin on very small screens */
-        line-height: 1.0; /* Very tight line height */
+        font-size: clamp(0.6rem, 3.5vw, 0.8rem); 
+        margin: 5px 0; 
+        line-height: 1.2; 
     }
 
     #blurb-pic pre {
