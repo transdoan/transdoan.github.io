@@ -78,7 +78,7 @@ a:hover {
 /* Main container - fixed and centered */
 .landing-page-content {
     position: fixed;
-    top: 60%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: monospace;
@@ -121,7 +121,7 @@ a:hover {
 
 #blurb-pic {
     flex: 0 1 auto;
-    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    font-size: clamp(q.0rem, 1.2vw, 1.2rem);
     line-height: 1.2;
     white-space: pre;
     font-weight: normal;
@@ -133,6 +133,7 @@ a:hover {
 }
 
 #blurb-pic pre {
+    color:#385968 !important;
     margin: 0; /* Remove default pre margins */
     width: fit-content; /* Pre element only takes space it needs */
     margin: 0 auto; /* Center the pre element */
@@ -208,7 +209,7 @@ a:hover {
 
     #blurb-pic {
         order: 0;
-        font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+        font-size: clamp(0.9rem, 2.5vw, 1.0rem);
         width: 100%;
         overflow-x: auto;
         padding: 0;
@@ -252,7 +253,7 @@ a:hover {
 }
 
 
-@media (max-width: 468px) {
+@media (max-width: 568px) {
     .landing-page-content {
         width: 90%;
         padding: 10px;
@@ -277,7 +278,7 @@ a:hover {
     #blurb-about {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        font-size: clamp(0.9rem, 3vw, 1.2rem);
+        font-size: clamp(1.0rem, 3vw, 1.2rem);
         font-weight: 450;
         font-family: monospace;
         font-style: normal;
@@ -286,7 +287,7 @@ a:hover {
     #blurb-nav {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        font-size: clamp(0.9rem, 3vw, 1.2rem);
+        font-size: clamp(1.0rem, 3vw, 1.2rem);
     }
 
     .nav-link {
