@@ -181,6 +181,10 @@ a:hover {
     padding-bottom: 0;
 }
 
+#ascii-art {
+    margin-top: 8px;
+}
+
 /* Tablet styles */
 @media (max-width: 800px) {
     .landing-page-content {
