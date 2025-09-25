@@ -25,7 +25,7 @@ html, body {
 }
 
 html, body, *, .btn, .btn-outline-success, a, button {
-    cursor: url('fish_cursor.cur'), auto !important;
+    cursor: url('./assets/fish_cursor.cur'), auto !important;
 }
 
 p.landing-about {
@@ -70,6 +70,7 @@ ol {
     width: 90%;
     max-width: 600px;
     padding: 20px;
+    margin: 10px 0;
     box-sizing: border-box;
 }
 
@@ -165,7 +166,7 @@ a:hover {
     text-decoration: none;
     font-family: monospace;
     font-weight: 570;
-    font-size: 15px;
+    font-size: 17px;
     display: inline;
     margin: 0 2px;
     padding-bottom: 0;
@@ -178,7 +179,7 @@ a:hover {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 95%; 
+        width: 90%; 
         max-width: none;
         margin-top: 10px;
         padding: 15px;
@@ -234,14 +235,14 @@ a:hover {
 
 @media (max-width: 468px) {
     .landing-page-content {
-        width: 98%;
+        width: 90%;
         padding: 10px;
         margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     #blurb {
-        gap: 10px; 
+        /* gap: 1px;  */
     }
 
     #blurb-pic {
@@ -258,7 +259,6 @@ a:hover {
         padding-left: 0;
         font-size: clamp(1.3rem, 4vw, 1.6rem);
         text-align: center;
-        margin-top: 0px;
     }
     
     #blurb-about {
@@ -268,13 +268,12 @@ a:hover {
         font-weight: 450;
         font-family: monospace;
         font-style: normal;
-        width: 100%;
     }
 
     .nav-link {
         text-align: center;
-        font-size: clamp(0.8rem, 3vw, 0.9rem);
-        /* margin: 0 0.2px; */
+        font-size: clamp(0.7rem, 3vw, 0.8rem);
+        margin: 0px;
         font-weight: 450;
         font-family: monospace;
     }
