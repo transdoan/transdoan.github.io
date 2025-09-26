@@ -117,6 +117,7 @@ a:hover {
     text-align: justify; 
     color: #35435c;
     width: 100%;
+    max-width: 500px;
 }
 
 
@@ -137,7 +138,7 @@ a:hover {
     font-family: monospace;
     font-weight: 570;
     font-style: normal;
-    font-size: clamp(1.0rem, 1.2vw, 1.2rem);
+    font-size: clamp(1.0rem, 1.5vw, 1.3rem);
 }
 
 #blurb-pic {
@@ -162,18 +163,18 @@ a:hover {
 }
 
 #blurb-nav {
-    font-size: clamp(1.0rem, 1.2vw, 1.2rem);
+    font-size: clamp(1.0rem, 1.5vw, 1.3rem);
     text-align: left !important;
     font-weight: 570;
 }
 
 #artifacts-about {
-    font-size: clamp(1.0rem, 2vw, 1.1rem);
+    font-size: clamp(1.0rem, 1.2vw, 1.3rem);
     text-align: justify;
     align-items: center;
-    max-width: 85%;
+    max-width: 90%;
     margin: 0 auto; 
-    padding: 0 10px;
+    padding: 0 5px;
     justify-content: center;
 }
 
@@ -191,7 +192,7 @@ a:hover {
     text-decoration: none;
     font-family: monospace;
     font-weight: 450;
-    font-size: 16px;
+    font-size: clamp(1.0rem, 1.2vw, 1.3rem);
     display: column;
 }
 
