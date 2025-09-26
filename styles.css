@@ -242,13 +242,13 @@ a:hover {
         min-width: 0; /* allow 4 shrinking */
     }
 
-    #blurb-name-header {
+    /* #blurb-name-header {
         font-size: clamp(1.3rem, 3vw, 1.6rem);
         padding-bottom: 5px;
         margin-bottom: 8px;
         text-align: left; 
         width: 100%;
-    }
+    } */
 
     #blurb-about {
         max-width: 100%;
@@ -265,6 +265,10 @@ a:hover {
         padding-left: 5px;
         font-size: clamp(1.0rem, 3vw, 1.2rem);
     
+    }
+
+    #artifacts-about {
+        font-size: clamp(1.0rem, 3vw, 1.3rem);
     }
 }
 
@@ -286,10 +290,10 @@ a:hover {
         line-height: 1.1;
     }
 
-    #blurb-name-header {
+    /* #blurb-name-header {
         font-size: clamp(1.4rem, 4vw, 1.7rem);
         text-align: center;
-    }
+    } */
     
     #blurb-about {
         padding-left: 0.5rem;
@@ -308,7 +312,7 @@ a:hover {
     }
 
     #artifacts-about {
-        font-size: clamp(1.0rem, 3vw, 1.3rem);
+        font-size: clamp(1.0rem, 3vw, 1.4rem);
     }
 
     .nav-link {
