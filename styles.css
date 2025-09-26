@@ -154,7 +154,7 @@ a:hover {
 
 #blurb-pic pre {
     color:#496776 !important;
-    font-weight: 570;
+    font-weight: 500;
     margin: 0; 
     width: fit-content;
     margin: 0 auto;
@@ -168,7 +168,7 @@ a:hover {
 }
 
 #artifacts-about {
-    font-size: clamp(1.0rem, 2vw, 1.2rem);
+    font-size: clamp(1.0rem, 2vw, 1.3rem);
     text-align: justify;
     align-items: center;
     max-width: 90%;
