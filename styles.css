@@ -78,7 +78,7 @@ a:hover {
 /* Main container - fixed and centered */
 .landing-page-content {
     position: fixed;
-    top: 57%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: monospace;
@@ -143,17 +143,17 @@ a:hover {
 #blurb-pic {
     flex: 0 1 auto;
     font-size: clamp(1.0rem, 2vw, 1.2rem);
+    font-family: monospace;
     line-height: 1.2;
     white-space: pre;
-    font-family: monospace;
-    width: 100%; /* Ensure it takes full width of parent */
-    overflow-x: auto; /* Allow horizontal scroll if needed */
-    text-align: center; /* Center the ASCII art */
+    width: 100%;  
+    overflow-x: auto;
+    text-align: center; 
     margin-bottom: 5rem;
 }
 
 #blurb-pic pre {
-    color:#5b7a8a !important;
+    color:#496776 !important;
     font-weight: 570;
     margin: 0; 
     width: fit-content;
@@ -168,12 +168,12 @@ a:hover {
 }
 
 #artifacts-about {
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-size: clamp(1.0rem, 2vw, 1.2rem);
     text-align: justify;
     align-items: center;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto; 
-    padding: 0 20px;
+    padding: 0 10px;
     justify-content: center;
 }
 
@@ -181,7 +181,7 @@ a:hover {
 .custom-nav {
     text-align: center;
     padding-bottom: 10px;
-    line-height: 1;
+    line-height: 0.9;
 }
 
 .nav-link {
@@ -194,7 +194,14 @@ a:hover {
 }
 
 #ascii-art {
+    color:#496776 !important;
     margin-top: 8px;
+    font-size: px;
+    line-height: 1.2;
+}
+
+#menu-bar-ascii{
+    
 }
 
 /* Tablet styles */
@@ -298,7 +305,8 @@ a:hover {
     #blurb-nav {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        font-size: clamp(1.0rem, 3vw, 1.3rem);
+        font-weight: 470;
+        font-size: clamp(1.0rem, 3vw, 1.2rem);
     }
 
     .nav-link {
