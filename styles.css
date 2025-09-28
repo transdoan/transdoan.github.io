@@ -113,11 +113,10 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 30px; */
     text-align: justify; 
     color: #35435c;
-    width: 100%;
-    max-width: 500px;
+    width: 95%;
+    max-width: 600px;
 }
 
 
@@ -134,7 +133,7 @@ a:hover {
 
 /* Text content container */
 #blurb-about {
-    flex: 0 1 280px;
+    /* flex: 0 1 280px; */
     font-family: monospace;
     font-weight: 570;
     font-style: normal;
@@ -143,7 +142,7 @@ a:hover {
 
 #blurb-pic {
     flex: 0 1 auto;
-    font-size: clamp(1.0rem, 2vw, 1.2rem);
+    font-size: clamp(1.0rem, 2vw, 1.3rem);
     font-family: monospace;
     line-height: 1.2;
     white-space: pre;
@@ -199,7 +198,7 @@ a:hover {
 #ascii-art {
     color:#496776 !important;
     margin-top: 8px;
-    font-size: px;
+    /* font-size: px; */
     line-height: 1.2;
 }
 
@@ -278,12 +277,10 @@ a:hover {
     .landing-page-content {
         width: 90%;
         padding: 14px;
-        /* margin-top: 20px;
-        margin-bottom: 40px; */
     }
 
     #blurb-pic {
-        font-size: clamp(1.0rem, 2vw, 1.2rem); 
+        font-size: clamp(1.0rem, 2vw, 1.3rem); 
         margin-bottom: 20px;
     }
 
