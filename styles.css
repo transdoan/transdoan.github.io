@@ -266,7 +266,7 @@ a:hover {
     }
 
     #blurb-pic {
-        font-size: clamp(1.0rem, 3vw, 1.2rem); 
+        font-size: clamp(1.0rem, 3vw, 1.1rem); 
         margin-bottom: 20px;
     }
 
@@ -289,7 +289,7 @@ a:hover {
     }
 
     #blurb-nav {
-        padding-left: 0.5rem;
+        padding-left: 0.6rem;
         padding-right: 0.5rem;
         font-weight: 470;
         font-size: clamp(1.0rem, 3vw, 1.2rem);

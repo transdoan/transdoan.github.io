@@ -5,7 +5,7 @@ function copyContent() {
     navigator.clipboard.writeText(email)
         .then(() => {
             const originalText = button.innerHTML;
-            button.innerHTML = 'copied to clipboard!';
+            button.innerHTML = 'copied to clipboard!)';
             button.style.color = '#64864e'; 
             
             // rvert 'copied!' text after 1.5 seconds
