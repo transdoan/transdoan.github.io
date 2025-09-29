@@ -38,20 +38,6 @@ p.landing-about {
     margin-inline-end: 0px;
 }
 
-/* This makes it so that all unordered lists have no bullets (or markers) and that they're not indented (via "padding: 0;"). Margin is just used for stylistic purposes. */
-ul {
-    list-style-type: none;
-    margin: 10px;
-    padding: 0;
-}
-
-/* This makes it so that all ordered lists have no numbering (or markers) and that they're not indented (via "padding: 0;"). Margin is just used for stylistic purposes.*/
-ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 /* Makes it so that the menu is fixed on the top left of the page even as the user scrolls. I used !important to override the bootstrap CSS properties. */
 .btn-group {
     display: flex;
@@ -79,7 +65,7 @@ a:hover {
 .landing-page-content {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
     font-family: monospace;
     text-align: center;
@@ -225,7 +211,7 @@ a:hover {
 
     #blurb-pic {
         order: 0;
-        font-size: clamp(1.0rem, 2vw, 1.2rem);
+        font-size: clamp(1.0rem, 3vw, 1.3rem);
         width: 100%;
         overflow-x: auto;
         padding: 0;
@@ -276,7 +262,7 @@ a:hover {
 @media (max-width: 568px) {
     .landing-page-content {
         width: 90%;
-        padding: 14px;
+        padding: 16px;
     }
 
     #blurb-pic {

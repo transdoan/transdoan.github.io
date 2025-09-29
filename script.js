@@ -11,7 +11,7 @@ function copyContent() {
             // rvert 'copied!' text after 1.5 seconds
             setTimeout(() => {
                 button.innerHTML = originalText;
-                button.style.color = ''; // back to og color
+                button.style.color = ''; 
             }, 1500);
         })
         .catch(err => {
