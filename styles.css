@@ -30,13 +30,6 @@ html, body, *, .btn, .btn-outline-success, a, button {
     cursor: url('./assets/fish_cursor.cur'), auto !important;
 }
 
-p.landing-about {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 
 /* Makes it so that the menu is fixed on the top left of the page even as the user scrolls. I used !important to override the bootstrap CSS properties. */
 .btn-group {
@@ -154,10 +147,10 @@ a:hover {
 }
 
 #artifacts-about {
-    font-size: clamp(1.0rem, 1.2vw, 1.3rem);
+    font-size: clamp(1.0rem, 1.2vw, 1.2rem);
     text-align: justify;
     align-items: center;
-    max-width: 90%;
+    max-width: 95%;
     margin: 0 auto; 
     padding: 0 5px;
     justify-content: center;
@@ -177,14 +170,13 @@ a:hover {
     text-decoration: none;
     font-family: monospace;
     font-weight: 450;
-    font-size: clamp(1.0rem, 1.2vw, 1.3rem);
+    font-size: clamp(1.0rem, 1.5vw, 1.3rem);
     display: column;
 }
 
-#ascii-art {
+.ascii-art {
     color:#496776 !important;
     margin-top: 8px;
-    /* font-size: px; */
     line-height: 1.2;
 }
 
@@ -273,11 +265,6 @@ a:hover {
     #blurb-pic pre {
         line-height: 1.1;
     }
-
-    /* #blurb-name-header {
-        font-size: clamp(1.4rem, 4vw, 1.7rem);
-        text-align: center;
-    } */
     
     #blurb-about {
         padding-left: 0.6rem;
@@ -300,7 +287,7 @@ a:hover {
     }
 
     .nav-link {
-        font-size: clamp(1.0rem, 3vw, 1.2rem);
+        font-size: clamp(1.0rem, 3vw, 1.3rem);
         text-align: center;
         margin: 2px 0;
         font-weight: 450;
