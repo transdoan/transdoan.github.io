@@ -68,6 +68,7 @@
 
 @media (max-width: 568px) {
     .landing-page-content {
-        /* padding-top: 12%; */
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
