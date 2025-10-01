@@ -254,7 +254,7 @@ a:hover {
 @media (max-width: 568px) {
     .landing-page-content {
         width: 90%;
-        padding: 16px;
+        padding: 16px 0;
     }
 
     #blurb-pic {
