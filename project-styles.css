@@ -1,15 +1,16 @@
 .landing-page-content {
     position: static !important;
     transform: none !important;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 70px;
+    padding-bottom: 60px;
     max-width: 600px;
     margin: 10px 0px;
 }
 
 .projects-container {
     padding-top: 10px;
-    margin: 10px auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
     max-width: 95%;
 }
 
@@ -44,7 +45,8 @@
 }
 
 .project-description {
-    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    font-weight: 500;
     line-height: 1.4;
     text-align: justify;
 }

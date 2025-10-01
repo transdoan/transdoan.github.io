@@ -61,7 +61,6 @@ a:hover {
 }
 
 #linked-page-header {
-    /* padding-bottom: 20px; */
     font-size: 18px;
     font-weight: 590;
 }
@@ -81,9 +80,8 @@ a:hover {
 
 
 #blurb-about {
-    /* flex: 0 1 280px; */
     font-family: monospace;
-    font-weight: 570;
+    font-weight: 560;
     font-style: normal;
     font-size: clamp(1.0rem, 1.5vw, 1.3rem);
 }
@@ -117,6 +115,7 @@ a:hover {
 
 #artifacts-about {
     font-size: clamp(1.0rem, 1.2vw, 1.2rem);
+    font-weight: 500;
     text-align: justify;
     align-items: center;
     max-width: 95%;
@@ -156,8 +155,6 @@ a:hover {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 90%; 
-        /* max-width: none; */
-        /* margin-top: 8px; */
         padding: 20px;
         box-sizing: border-box;
     }
