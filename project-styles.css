@@ -4,17 +4,11 @@
     padding-top: 60px;
     padding-bottom: 30px;
     max-width: 600px;
-    margin: 15px 0px;
-    /* padding: 20px;
-    margin: 10px 0; */
-    /* margin: 0 auto; */
-}
-
-#projects-page-header {
-    padding-bottom: 20px;
+    margin: 10px 0px;
 }
 
 .projects-container {
+    padding-top: 10px;
     margin: 10px auto;
     max-width: 95%;
 }
@@ -51,13 +45,8 @@
 
 .project-description {
     font-size: clamp(1rem, 1.2vw, 1.1rem);
-    color: #35435a;
     line-height: 1.4;
     text-align: justify;
-}
-
-#project-ascii {
-    /* padding-bottom: 50px; */
 }
 
 
