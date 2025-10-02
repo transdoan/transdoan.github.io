@@ -44,8 +44,8 @@ a:hover {
 }
 
 #linked-page-header {
-    font-size: 17px;
-    font-weight: 590;
+    font-size: 19px;
+    font-weight: 600;
 }
 
 #email-link-button {
@@ -89,7 +89,7 @@ a:hover {
 
 #blurb-about {
     font-family: monospace;
-    font-weight: 560;
+    font-weight: 570;
     font-style: normal;
     font-size: clamp(1.0rem, 1.3vw, 1.3rem);
 }
@@ -123,7 +123,7 @@ a:hover {
 
 .custom-nav {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     line-height: 0.9;
     font-weight: 520;
     font-size: clamp(1.0rem, 3vw, 1.2rem);
