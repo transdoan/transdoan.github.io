@@ -18,3 +18,13 @@ function copyContent() {
             console.error('Failed to copy text!!!!: ', err);
         });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const projectItems = document.querySelectorAll('.project-item');
+  
+  projectItems.forEach(item => {
+    item.addEventListener('click', function() {
+      this.classList.toggle('expanded');
+    });
+  });
+});
