@@ -121,7 +121,7 @@ a:hover {
 }
 
 .custom-nav {
-    text-align: center;
+    /* text-align: center; */
     padding-bottom: 20px;
     line-height: 0.9;
     font-weight: 600;
@@ -149,6 +149,11 @@ a:hover {
     line-height: 1.2;
 }
 
+.menu-bar-ascii {
+    flex-direction: row !important;
+    padding-top: 20px;
+}
+
 /* Tablet styles */
 @media (max-width: 800px) {
     .landing-page-content {
@@ -162,7 +167,7 @@ a:hover {
     }
 
     #blurb {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         gap: 10px; 
         width: 100%;

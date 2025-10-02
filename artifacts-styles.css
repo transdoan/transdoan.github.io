@@ -16,7 +16,7 @@
 }
 
 .subpage-content {
-    font-size: clamp(1.0rem, 1.3vw, 1.3rem);
+    font-size: clamp(1.0rem, 1.2vw, 1.2rem);
     font-weight: 450;
     text-align: justify;
     width: 100%;
