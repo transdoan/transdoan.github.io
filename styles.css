@@ -9,7 +9,7 @@ html, body {
     justify-content: center;
     align-items: center;
     font-family: monospace;
-    font-weight: 450;
+    font-weight: 500;
     box-sizing: border-box;
 }
 
@@ -108,7 +108,7 @@ a:hover {
 
 #blurb-pic pre {
     color:#3f5b69 !important;
-    font-weight: 450;
+    font-weight: 480;
     margin: 0; 
     width: fit-content;
     margin: 0 auto;
@@ -133,7 +133,7 @@ a:hover {
     color: #92658f;
     text-decoration: none;
     font-family: monospace;
-    font-weight: 450;
+    font-weight: 500;
     font-size: clamp(1.0rem, 1.1vw, 1.3rem);
     display: column;
 }
@@ -215,13 +215,13 @@ a:hover {
     
     #blurb-about {
         font-size: clamp(1.0rem, 3vw, 1.3rem);
-        font-weight: 480;
+        font-weight: 500;
         font-family: monospace;
         font-style: normal;
     }
 
     #blurb-nav {
-        font-weight: 470;
+        font-weight: 500;
         font-size: clamp(1.0rem, 3vw, 1.2rem);
     }
 
@@ -229,7 +229,7 @@ a:hover {
         font-size: clamp(1.0rem, 3vw, 1.4rem);
         text-align: center;
         margin: 2px auto;
-        font-weight: 450;
+        font-weight: 500;
         font-family: monospace;
     }
 }
