@@ -5,14 +5,12 @@ function copyContent() {
     navigator.clipboard.writeText(email)
         .then(() => {
             const originalText = button.innerHTML;
-            button.innerHTML = 'copied to clipboard!)';
+            button.textContent = 'copied to clipboard)';
             button.style.color = '#64864e'; 
-            
-            // rvert 'copied!' text after 1.5 seconds
             setTimeout(() => {
                 button.innerHTML = originalText;
                 button.style.color = ''; 
-            }, 1500);
+            }, 1700);
         })
         .catch(err => {
             console.error('Failed to copy text!!!!: ', err);
