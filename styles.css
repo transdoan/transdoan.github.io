@@ -31,7 +31,7 @@ a:hover {
 .landing-page-content {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
     color: #43516a;
     font-family: monospace;
