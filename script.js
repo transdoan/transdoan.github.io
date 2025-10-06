@@ -5,7 +5,7 @@ function copyContent() {
     navigator.clipboard.writeText(email)
         .then(() => {
             const originalText = button.innerHTML;
-            button.textContent = 'copied to clipboard)';
+            button.textContent = 'copied to clipboard';
             button.style.color = '#64864e'; 
             setTimeout(() => {
                 button.innerHTML = originalText;

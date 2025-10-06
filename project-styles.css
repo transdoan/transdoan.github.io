@@ -88,7 +88,8 @@
 .project-item.expanded .project-description {
   max-height: 500px;
   opacity: 1;
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .ascii-art {
