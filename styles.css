@@ -199,6 +199,7 @@ a:hover {
     #blurb-nav {
         padding-left: 5px;
         font-size: clamp(1.0rem, 3vw, 1.2rem);
+        line-height: 1.8;
     }
 }
 
@@ -231,6 +232,7 @@ a:hover {
         font-weight: 500;
         font-size: clamp(1.0rem, 3vw, 1.2rem);
         padding-left: 15px;
+        line-height: 1.8;
     }
 
     .nav-link {
