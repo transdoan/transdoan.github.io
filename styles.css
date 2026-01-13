@@ -93,6 +93,11 @@ a:hover {
     font-size: clamp(1.0rem, 1.3vw, 1.3rem);
 }
 
+.last-updated {
+    font-size: clamp(0.8rem, 1.0vw, 1.0rem);
+    font-style: italic;
+}
+
 #blurb-pic {
     flex: 0 1 auto;
     font-size: clamp(1.0rem, 2vw, 1.3rem);
