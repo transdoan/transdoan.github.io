@@ -88,7 +88,7 @@ a:hover {
 
 #blurb-about {
     font-family: monospace;
-    font-weight: 570;
+    font-weight: 500;
     font-style: normal;
     font-size: clamp(1.0rem, 1.3vw, 1.3rem);
 }
@@ -125,6 +125,7 @@ a:hover {
 
 .star {
     animation: twinkle 8s ease-in-out infinite;
+    display: inline;
 }
 
 /* star animations */
@@ -153,7 +154,7 @@ a:hover {
     padding-top: 5px;
     font-size: clamp(1.0rem, 1.3vw, 1.3rem);
     text-align: left !important;
-    font-weight: 570;
+    font-weight: 500;
     line-height: 1.7;
 }
 
