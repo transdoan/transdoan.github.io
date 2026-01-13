@@ -114,6 +114,36 @@ a:hover {
     text-align: left; 
 }
 
+.moon {
+    font-size: 23px;
+}
+
+.star {
+    animation: twinkle 8s ease-in-out infinite;
+}
+
+/* star animations */
+.star:nth-of-type(1) {
+    animation-delay: 1.0s;
+}
+
+.star:nth-of-type(2) {
+    animation-delay: 2.3s;
+}
+
+.star:nth-of-type(3) {
+    animation-delay: 0.5s;
+} 
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
 #blurb-nav {
     padding-top: 5px;
     font-size: clamp(1.0rem, 1.3vw, 1.3rem);
