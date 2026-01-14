@@ -203,7 +203,6 @@ a:hover {
 
 
 
-
 @media (max-width: 800px) {
     .landing-page-content {
         width: 95%; 
@@ -298,13 +297,7 @@ a:hover {
         padding-top: 0px;
     }
 
-    .research-page-media-list {
-        font-size: clamp(0.96rem, 1.3vw, 1.2rem);
-        padding-top: 8px;
-        padding-right: 2px;
-    }
-
     .moon {
-    font-size: 19px;
-}
+        font-size: 19px;
+    }
 }

@@ -18,3 +18,26 @@
     font-size: clamp(1rem, 1.3vw, 1.2rem);
     padding-top: 10px;
 }
+
+.media-list {
+    text-align: left; 
+    max-height: 152px; 
+    overflow-y: auto; 
+    padding-left: 20px;
+}
+
+@media (max-width: 568px) {
+    .research-page-media-list {
+        font-size: clamp(0.96rem, 1.3vw, 1.2rem);
+        padding-top: 8px;
+        padding-right: 2px;
+    }
+
+    .media-list {
+    text-align: left; 
+    max-height: 160px; 
+    overflow-y: auto; 
+    padding-left: 20px;
+}
+
+}
