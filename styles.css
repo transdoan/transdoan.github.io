@@ -27,6 +27,8 @@ a:hover {
     color: #e1845f;
 }
 
+
+
 /* Main container */
 .landing-page-content {
     position: fixed;
@@ -125,6 +127,7 @@ a:hover {
     font-size: 23px;
 }
 
+
 .star {
     animation: twinkle 8s ease-in-out infinite;
     display: inline;
@@ -198,10 +201,7 @@ a:hover {
     padding-top: 20px;
 }
 
-.research-page-media-list {
-    font-size: clamp(1rem, 1.3vw, 1.2rem);
-    padding-top: 10px;
-}
+
 
 
 @media (max-width: 800px) {
@@ -268,7 +268,7 @@ a:hover {
     }
 
     #blurb-pic pre {
-        line-height: 1.1;
+        line-height: 1.15;
     }
     
     #blurb-about {
@@ -303,4 +303,8 @@ a:hover {
         padding-top: 8px;
         padding-right: 2px;
     }
+
+    .moon {
+    font-size: 19px;
+}
 }
