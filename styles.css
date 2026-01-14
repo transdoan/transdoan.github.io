@@ -129,25 +129,14 @@ a:hover {
 
 
 .star {
-    animation: twinkle 8s ease-in-out infinite;
+    animation: twinkle 2.8s ease-in-out infinite;
     display: inline;
 }
 
-/* star animations */
-.star:nth-of-type(1) {
-    animation-delay: 1.0s;
-}
-
-.star:nth-of-type(2) {
-    animation-delay: 2.0s;
-}
-
-.star:nth-of-type(3) {
-    animation-delay: 1.6s;
-} 
-.star:nth-of-type(4) {
-    animation-delay: 0.5s;
-} 
+.star-1 { animation-delay: 1.4s; }
+.star-2 { animation-delay: 1.5s; }
+.star-3 { animation-delay: 2.1s; }
+.star-4 { animation-delay: 1.8s; }
 
 @keyframes twinkle {
     0%, 100% {
